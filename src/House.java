@@ -1,4 +1,4 @@
-public class House {
+public abstract class House {
 //Задача 1
 //Создайте абстрактный класс "Дом". В качестве аргумента конструктора принимайте адрес.
 //
@@ -15,5 +15,19 @@ public class House {
 // один многоквартирный.
 //
 //Выведите информацию о домах в списке с использованием цикла for-each.
+
+  private String address;
+
+  public void setAddress(String address){
+    this.address = address;
+  }
+
+  public String getAddress(){
+    return address;
+  }
+
+  public House(String address){
+    this.address = address;
+  }
 
 }
