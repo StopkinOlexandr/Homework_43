@@ -5,9 +5,14 @@ public class PrivateHouse extends House {
   }
 
   @Override
+  public void demolish() {
+    super.demolish();
+    System.out.println("Вы снесли частный дом");
+  }
+
+  @Override
   public String toString() {
-    String output = String.format("Private house, address: %s ", getAddress());
-    return output;
+    return String.format("Private house, address: %s ", getAddress());
   }
 }
 

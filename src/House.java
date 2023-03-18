@@ -28,22 +28,22 @@ public abstract class House {
   private String address;
   private boolean demolished = false;
 
-  public void setAddress(String address){
+  public void setAddress(String address) {
     this.address = address;
   }
 
-  public String getAddress(){
+  public String getAddress() {
     return address;
   }
 
-  public void demolish(){
+  public void demolish() {
     this.demolished = true;
-    System.out.println("Дом снесен");
   }
 
-  public House(String address){
+  public House(String address) {
     this.address = address;
   }
 
-  public House(){}
+  public House() {
+  }
 }

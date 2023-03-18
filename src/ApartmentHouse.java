@@ -1,7 +1,7 @@
-public class ApartmentHouse extends House{
+public class ApartmentHouse extends House {
   private int entrances;
 
-  public void setEntrances(int entrances){
+  public void setEntrances(int entrances) {
     this.entrances = entrances;
   }
 
@@ -9,9 +9,15 @@ public class ApartmentHouse extends House{
     return entrances;
   }
 
-  public ApartmentHouse (String address, int entrances) {
+  public ApartmentHouse(String address, int entrances) {
     super(address);
     this.entrances = entrances;
+  }
+
+  @Override
+  public void demolish() {
+    super.demolish();
+    System.out.printf("Вы снесли многоквартирный дом. %d подъездов!%n", getEntrances());
   }
 
   @Override
