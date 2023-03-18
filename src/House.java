@@ -26,6 +26,7 @@ public abstract class House {
 //  Вместо %d должно быть число подъездов.
 
   private String address;
+  private boolean demolished = false;
 
   public void setAddress(String address){
     this.address = address;
@@ -33,6 +34,11 @@ public abstract class House {
 
   public String getAddress(){
     return address;
+  }
+
+  public void demolish(){
+    this.demolished = true;
+    System.out.println("Дом снесен");
   }
 
   public House(String address){
