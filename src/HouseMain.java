@@ -11,5 +11,8 @@ public class HouseMain {
     House apartment1 = new ApartmentHouse("Street 1", 3);
     houses.add(apartment1);
 
+    for (House house: houses) {
+      System.out.println(house);
+    }
   }
 }

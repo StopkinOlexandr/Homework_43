@@ -6,7 +6,7 @@ public class PrivateHouse extends House {
 
   @Override
   public String toString() {
-    String output = String.format("Private house, address: $s ", getAddress());
+    String output = String.format("Private house, address: %s ", getAddress());
     return output;
   }
 }

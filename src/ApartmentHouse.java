@@ -16,7 +16,7 @@ public class ApartmentHouse extends House{
 
   @Override
   public String toString() {
-    String output = String.format("Apartment house, address: $s, entrances: $d",
+    String output = String.format("Apartment house, address: %s, entrances: %d",
         getAddress(), getEntrances());
     return output;
   }
