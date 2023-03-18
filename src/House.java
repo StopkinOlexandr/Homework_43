@@ -30,4 +30,5 @@ public abstract class House {
     this.address = address;
   }
 
+  public House(){}
 }
